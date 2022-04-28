@@ -10,11 +10,11 @@ This plugin fecthces from GCS bucket and reads a Yml/JSON file for loading GCE a
 ### Requirements
 1. Must be used with Spinnaker version 1.24 (TODO) or higher.
 2. Clouddriver must have support for Dynamic Accounts Loading [GCE support](https://github.com/kirangodishala/clouddriver/tree/1.26.x-external-accounts-support)
-3. Must have a GCS bucket with bucketName, fileName to access the Yml/JSON file to load GCE accounts.
+3. Must have a GCS bucket with bucketName, fileName to access the Yml file to load GCE accounts.
 
 
 ### Fetches and Loads GCE Account from a file in a Gcs bucket
-This plugin fetches GCE accounts from a Yml/JSON file stored in a Gcs bucket.
+This plugin fetches GCE accounts from a Yml file stored in a Gcs bucket.
 
 
 ```yaml
