@@ -33,13 +33,7 @@ google:
            agentEndpoint: localhost
            agentPort: 8500
            datacenters: []
-   primaryAccount: gce-gcs-account
-   bakeryDefaults:
-      templateFile: gce.json
-      baseImages: []
-      zone: us-central1-f
-      network: default
-      useInternalIp: false
+  
 ```
 
 
