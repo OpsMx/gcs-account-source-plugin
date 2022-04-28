@@ -8,7 +8,7 @@
         "version": "0.0.1",
         "date": "2022-04-28T10:41:10.923477Z",
         "requires": "clouddriver>=0.0.0",
-        "sha512sum": "5be865602cefc417386605e69dda29a2303f466f8019507aa14313a83db3c0ad3be17dc8c00f7ca867003d4e789ec7430e24d7a4093d7dc85802d8dbf499b370",
+        "sha512sum": "cf14808e7ee609c26ac864093c6a84828066558e9c03769d96ba13cc5e2c18aa6cac3ebce1620ebf5235a32713f8afe0c11c9cd3f3ca6dd255ef4c155dc586d5",
         "state": "RELEASE",
         "url": "https://github.com/ravichander82/gcs-plugin/releases/download/v0.0.1/gcs-plugin-0.0.1.zip"
       }
