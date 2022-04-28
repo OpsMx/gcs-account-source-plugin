@@ -19,7 +19,6 @@ This plugin fetches GCE accounts from a Yml/JSON file stored in a Gcs bucket.
 
 ```yaml
 google:
-   enabled: true
    accounts:
       - name: gcs-gcs-account
         requiredGroupMembership: []
