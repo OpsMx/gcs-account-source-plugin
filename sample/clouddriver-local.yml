@@ -1,0 +1,26 @@
+spinnaker:
+  extensibility:
+    plugins:
+      OpsMx.GcsAccountRegistration:
+        id: OpsMx.GcsAccountRegistration
+        enabled: true
+        Version: 0.0.2
+        extensions: {}
+    plugins-root-path: /opt/clouddriver/plugins
+    repositories:
+      gcsPlugin:
+        id: gcsPlugin
+        url: https://raw.githubusercontent.com/OpsMx/gcs-account-source-plugin/main/sample/plugins.json
+
+gcsSourceProperties:
+  bucketName: plugin-demo
+  fileName: accounts.yml
+
+credentials:
+  poller:
+    enabled: true
+    types:
+      gce:
+        reloadFrequencyMs: 2000
+
+

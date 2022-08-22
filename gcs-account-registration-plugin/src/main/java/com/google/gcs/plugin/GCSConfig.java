@@ -4,10 +4,10 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
-@ConfigurationProperties("gcsbucketproperties")
+@ConfigurationProperties("gcs-source-properties")
 public class GCSConfig {
 
-    String gcsBucketName;
+    String bucketName;
     String fileName;
 
 }

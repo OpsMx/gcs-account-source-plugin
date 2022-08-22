@@ -39,7 +39,7 @@ public class GoogleCredentialsDefinitionSource implements CredentialsDefinitionS
         List<GoogleConfigurationProperties.ManagedAccount> googleCredentialsDefinitions =
                 new ArrayList<>();
 
-        InputStream gcsData = gcsSource.downloadRemoteFile(config.getGcsBucketName(), config.getFileName());
+        InputStream gcsData = gcsSource.downloadRemoteFile(config.getBucketName(), config.getFileName());
 
         try {
             Yaml yaml = new Yaml();

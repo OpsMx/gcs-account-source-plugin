@@ -1,0 +1,26 @@
+google:
+  accounts:
+    - name: gce-account-1
+      requiredGroupMembership: []
+      permissions: {}
+      project: opsmx-ggproject-2022
+      jsonPath: encryptedFile:gcs!b:gce-accounts-v1!f:gce-account.json
+      alphaListed: false
+      imageProjects: []
+      consul:
+        enabled: false
+        agentEndpoint: localhost
+        agentPort: 8500
+        datacenters: []
+    - name: gce-account-2
+      requiredGroupMembership: []
+      permissions: {}
+      project: opsmx-ggproject-2022
+      jsonPath: encryptedFile:gcs!b:gce-accounts-v1!f:gce-account.json
+      alphaListed: false
+      imageProjects: []
+      consul:
+        enabled: false
+        agentEndpoint: localhost
+        agentPort: 8500
+        datacenters: []

@@ -45,12 +45,12 @@ public class ClouddriverPlugin extends PrivilegedSpringPlugin {
 
     @Override
     public void start() {
-        log.info("{} plugin started ******************************************", this.getClass().getSimpleName());
+        log.info("{} plugin started..", this.getClass().getSimpleName());
     }
 
     @Override
     public void stop() {
-        log.info("{} plugin stopped******************************************", this.getClass().getSimpleName());
+        log.info("{} plugin stopped", this.getClass().getSimpleName());
     }
 
 }

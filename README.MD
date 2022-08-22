@@ -8,7 +8,7 @@ This plugin fecthces from GCS bucket and reads a Yml/JSON file for loading GCE a
 
 
 ### Requirements
-1. Must be used with Spinnaker version 1.24 (TODO) or higher.
+1. Must be used with Spinnaker version 1.29 or higher.
 2. Clouddriver must have support for Dynamic Accounts Loading [GCE support](https://github.com/kirangodishala/clouddriver/tree/1.26.x-external-accounts-support)
 3. Must have a GCS bucket with bucketName, fileName to access the Yml file to load GCE accounts.
 
@@ -54,22 +54,20 @@ google:
 
 
 ### Setup
-1. Add the following to `clouddriver.yml` in the necessary [profile](https://spinnaker.io/reference/halyard/custom/#custom-profiles) to load plugin.
+Add the following to `clouddriver.yml` in the necessary [profile](https://spinnaker.io/reference/halyard/custom/#custom-profiles) to load plugin.
 ```yaml
 spinnaker:
    extensibility:
       plugins-root-path: /opt/clouddriver/plugins
       plugins:
-         Gcs.Plugin:
-            id: Gcs.Plugin
+         OpsMx.GcsAccountRegistration:
+            id: OpsMx.GcsAccountRegistration
             enabled: true
-            version: 0.0.1
-            extensions: {}
-            config: {}
+            version: 0.0.2
       repositories:
          gcsPlugin:
             id: gcsPlugin
-            url: https://raw.githubusercontent.com/OpsMx/gcs-account-source-plugin/dev/plugins.json
+            url: https://raw.githubusercontent.com/OpsMx/gcs-account-source-plugin/main/sample/plugins.json
 
 credentials:
    poller:
@@ -77,6 +75,10 @@ credentials:
       types:
          gce: # Enable GCE dynamic accounts registration poller
             reloadFrequencyMs: 20000 # Reload frequency in milliseconds
+
+gcsSourceProperties:
+  bucketName: plugin-demo
+  fileName: accounts.yml
 ```
 
 

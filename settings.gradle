@@ -6,9 +6,9 @@ pluginManagement {
   }
 }
 
-rootProject.name = "gcs-plugin"
+rootProject.name = "gcs-account-source-plugin"
 
-include "gcs-plugin"
+include "gcs-account-registration-plugin"
 
 def setBuildFile(project) {
   project.buildFileName = "${project.name}.gradle"
