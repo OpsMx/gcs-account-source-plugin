@@ -79,6 +79,9 @@ credentials:
 gcsSourceProperties:
   bucketName: plugin-demo
   fileName: accounts.yml
+
+google:
+  enabled: true
 ```
 
 
