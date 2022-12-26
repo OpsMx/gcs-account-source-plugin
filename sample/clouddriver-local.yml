@@ -22,5 +22,6 @@ credentials:
     types:
       gce:
         reloadFrequencyMs: 2000
-
+google:
+  enabled: true
 
